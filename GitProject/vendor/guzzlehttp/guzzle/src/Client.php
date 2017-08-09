@@ -213,7 +213,6 @@ class Client implements ClientInterface
     private function prepareDefaults($options)
     {
         $defaults = $this->config;
-
         if (!empty($defaults['headers'])) {
             // Default headers are only added if they are not present.
             $defaults['_conditional'] = $defaults['headers'];

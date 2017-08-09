@@ -110,7 +110,6 @@ function choose_handler()
     } elseif (function_exists('curl_multi_exec')) {
         $handler = new CurlMultiHandler();
     }
-
     if (ini_get('allow_url_fopen')) {
         $handler = $handler
             ? Proxy::wrapStreaming($handler, new StreamHandler())
