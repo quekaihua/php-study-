@@ -68,6 +68,10 @@ class Loader {
      */
     public function load($name, $shared = true) {
         $obj = null;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4f25a165c271bf7b03c51f4a55094d2c7fdbd467
         if (isset($this->classes[$name])) {
             list($class, $params, $callback) = $this->classes[$name];
 
@@ -178,6 +182,7 @@ class Loader {
      *
      * @param string $class Class name
      */
+<<<<<<< HEAD
     public static function loadClass($class) { 
         $class_file = str_replace(array('\\', '_'), '/', $class).'.php';
         // var_dump($class);var_dump($class_file);var_dump(self::$dirs);
@@ -185,6 +190,13 @@ class Loader {
             $file = $dir.'/'.$class_file;
             // var_dump($file);
             // var_dump(file_exists($file));
+=======
+    public static function loadClass($class) {
+        $class_file = str_replace(array('\\', '_'), '/', $class).'.php';
+
+        foreach (self::$dirs as $dir) {
+            $file = $dir.'/'.$class_file;
+>>>>>>> 4f25a165c271bf7b03c51f4a55094d2c7fdbd467
             if (file_exists($file)) {
                 require $file;
                 return;

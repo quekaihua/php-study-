@@ -73,8 +73,12 @@ class Flight {
      */
     public static function __callStatic($name, $params) {
         $app = Flight::app();
+<<<<<<< HEAD
         // var_dump($name);
         // var_dump($params);
+=======
+
+>>>>>>> 4f25a165c271bf7b03c51f4a55094d2c7fdbd467
         return \flight\core\Dispatcher::invokeMethod(array($app, $name), $params);
     }
 

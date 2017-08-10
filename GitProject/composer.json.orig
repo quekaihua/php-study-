@@ -1,0 +1,13 @@
+{
+    "require": {
+<<<<<<< HEAD
+=======
+        "league/route": "^3.0",
+        "zendframework/zend-diactoros": "^1.4",
+        "phpmailer/phpmailer": "^5.2",
+        "kriswallsmith/buzz": "^0.15.0",
+        "symfony/expression-language": "^3.3",
+>>>>>>> 4f25a165c271bf7b03c51f4a55094d2c7fdbd467
+        "mikecao/flight": "^1.3"
+    }
+}
