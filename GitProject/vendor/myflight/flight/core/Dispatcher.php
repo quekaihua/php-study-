@@ -1,7 +1,7 @@
 <?php
 namespace flight\core;
 
-class Dispathcher{
+class Dispatcher{
     protected $events = array();
 
     protected $filters = array();
