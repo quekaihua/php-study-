@@ -11,3 +11,5 @@ function __autoload($class){
 }
 
 print_r(class_parents(new b(), false));
+
+// false it not work!!!  why?
