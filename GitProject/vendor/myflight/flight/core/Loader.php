@@ -41,9 +41,10 @@ class Loader{
 
     public static function loadClass($class){
         $class_file = str_replace(array('\\', '_'), '/', $class) . '.php';
-
         foreach(self::$dirs as $dir){
-            $file = $dir . DIRECTORY_SEPATATOR . $class_file;
+                        //    DIRECTORY_SEPARATOR
+                        // var_dump(defined('DIRECTORY_SEPARATOR '));
+            $file = $dir . '/'. $class_file;
             if(is_file($file)){
                 require $file;
                 return;
@@ -57,7 +58,7 @@ class Loader{
                 self::addDirectory($value);
             }
         }else if(is_string($dir)){
-            if(!is_array($dir, self::$dirs)){
+            if(!in_array($dir, self::$dirs)){
                 self::$dirs[] = $dir;
             }
         }
