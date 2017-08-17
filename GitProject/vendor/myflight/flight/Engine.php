@@ -10,10 +10,27 @@ class Engine{
     protected $loader;
     protected $dispatcher;
 
-    public function __construct(){
-        $this->vars = array();
+    public function __construct()
+    {
+        $this->vars = [];
         $this->loader = new Loader();
         $this->dispatcher = new Dispatcher();
         $this->init();
+    }
+
+    public function init()
+    {
+        static $initialized = false;
+        $self = $this;
+
+        if($initialized){
+            $this->vars = [];
+            $this->loader = new Loader();
+            $this->dispatcher = new Dispatcher();
+            $this->init();
+        }
+
+        $this->loader->register('request', '\flight\net\Request');
+        
     }
 }
