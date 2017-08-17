@@ -189,14 +189,12 @@ class Dispatcher {
         list($class, $method) = $func;
 
 		$instance = is_object($class);
-<<<<<<< HEAD
+
 		// var_dump($params);
         // var_dump(count($params));
         // var_dump($instance);
         // var_dump($class);exit;
-=======
-		
->>>>>>> 4f25a165c271bf7b03c51f4a55094d2c7fdbd467
+
         switch (count($params)) {
             case 0:
                 return ($instance) ?
@@ -207,10 +205,7 @@ class Dispatcher {
                     $class->$method($params[0]) :
                     $class::$method($params[0]);
             case 2:
-<<<<<<< HEAD
-                var_dump($class);var_dump($method);var_dump($params[0]);var_dump($params[1]);exit;
-=======
->>>>>>> 4f25a165c271bf7b03c51f4a55094d2c7fdbd467
+                // var_dump($class);var_dump($method);var_dump($params[0]);var_dump($params[1]);exit;
                 return ($instance) ?
                     $class->$method($params[0], $params[1]) :
                     $class::$method($params[0], $params[1]);
