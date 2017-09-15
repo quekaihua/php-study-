@@ -7,9 +7,9 @@ namespace Composer\Autoload;
 class ComposerStaticInit367aa8674d520f1efb45866dffbb197c
 {
     public static $files = array (
+        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         'c964ee0ededf28c96ebd9db5099ef910' => __DIR__ . '/..' . '/guzzlehttp/promises/src/functions_include.php',
         'a0edc8309cc5e1d60e3047b5df6b7052' => __DIR__ . '/..' . '/guzzlehttp/psr7/src/functions_include.php',
-        '253c157292f75eb38082b5acb06f3f01' => __DIR__ . '/..' . '/nikic/fast-route/src/functions.php',
         '37a3dc5111fe8f707ab4c132ef1dbc62' => __DIR__ . '/..' . '/guzzlehttp/guzzle/src/functions_include.php',
         'fc73bab8d04e21bcdda37ca319c63800' => __DIR__ . '/..' . '/mikecao/flight/flight/autoload.php',
         '5b7d984aab5ae919d3362ad9588977eb' => __DIR__ . '/..' . '/mikecao/flight/flight/Flight.php',
@@ -24,6 +24,7 @@ class ComposerStaticInit367aa8674d520f1efb45866dffbb197c
         array (
             'Symfony\\Component\\ExpressionLanguage\\' => 37,
             'Symfony\\Component\\Cache\\' => 24,
+            'Slim\\' => 5,
         ),
         'P' => 
         array (
@@ -56,6 +57,10 @@ class ComposerStaticInit367aa8674d520f1efb45866dffbb197c
         array (
             'FastRoute\\' => 10,
         ),
+        'D' => 
+        array (
+            'DiDom\\' => 6,
+        ),
     );
 
     public static $prefixDirsPsr4 = array (
@@ -70,6 +75,10 @@ class ComposerStaticInit367aa8674d520f1efb45866dffbb197c
         'Symfony\\Component\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/cache',
+        ),
+        'Slim\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/slim/slim/Slim',
         ),
         'Psr\\SimpleCache\\' => 
         array (
@@ -123,9 +132,20 @@ class ComposerStaticInit367aa8674d520f1efb45866dffbb197c
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
+        'DiDom\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/imangazaliev/didom/src/DiDom',
+        ),
     );
 
     public static $prefixesPsr0 = array (
+        'P' => 
+        array (
+            'Pimple' => 
+            array (
+                0 => __DIR__ . '/..' . '/pimple/pimple/src',
+            ),
+        ),
         'B' => 
         array (
             'Buzz' => 
